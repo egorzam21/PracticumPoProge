@@ -2,21 +2,17 @@
 
 int main() {
     int p;
-    std::cout << "Введите число p (99 < p < 100, количество единиц в p не равно нулю): ";
+    std::cout << "p: ";
     std::cin >> p;
 
-    // Получаем последнюю цифру числа p
     int lastDigit = p % 10;
 
-    // Получаем двузначное число, образованное из числа p без последней цифры
     int twoDigitNumber = p / 10;
 
-    // Переставляем цифры в двузначном числе
     int reversedNumber = (twoDigitNumber % 10) * 10 + (twoDigitNumber / 10);
 
-    // Составляем и выводим исходное трехзначное число
     int x = reversedNumber * 10 + lastDigit;
-    std::cout << "Исходное число x: " << x << std::endl;
+    std::cout << "x: " << x << std::endl;
 
     return 0;
 }
