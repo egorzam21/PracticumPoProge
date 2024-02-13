@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+int main(){
+double e, f, g, h;
+std::cin>>e>>f>>g>>h;
+double a = sqrt(abs(e-(1/f))+g);
+double b = sin(e)+cos(h);
+double c = g/(e*f-1);
+std::cout<<a<<" "<<b<<" "<<c;
+return 0;
+
+
+
+
+}
